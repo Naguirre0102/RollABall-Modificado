@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 public class Monedas : MonoBehaviour
 {
-   static public int totalCoins = 10; // Se asigna en el GameManager
+    static public int totalCoins = 10;
     private int coinsCollected = 0;
     public TextMeshProUGUI coinCounterText;
     private void OnTriggerEnter(Collider other)

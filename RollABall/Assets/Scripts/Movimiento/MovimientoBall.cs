@@ -55,6 +55,8 @@ public class MovimientoBall : MonoBehaviour
         if (moveDirection.magnitude > 0)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+
+
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
